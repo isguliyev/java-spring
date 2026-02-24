@@ -1,0 +1,2 @@
+$ curl http://localhost:8080/messages/simpleMessageWelcome
+WELCOME TO THE MICRO-SERVICE CLASS USING SPRING BOOT!!!

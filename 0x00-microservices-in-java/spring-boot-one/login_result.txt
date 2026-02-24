@@ -1,0 +1,20 @@
+$ curl http://localhost:8080/messages/login
+USER AND PASSWORD NOT PROVIDED
+
+$ curl "http://localhost:8080/messages/login?password=doubleAgent"
+USER NOT PROVIDED
+
+$ curl http://localhost:8080/messages/login?user=Itachi
+PASSWORD NOT PROVIDED
+
+$ curl "http://localhost:8080/messages/login?user=ItachiOfTheSharingan&password=doubleAgentOfHiddenLeaf"
+USER AND PASSWORD INVALID
+
+$ curl "http://localhost:8080/messages/login?user=ItachiOfTheSharingan&password=doubleAgent"
+INVALID USER
+
+$ curl "http://localhost:8080/messages/login?user=Itachi&password=doubleAgentOfHiddenLeaf"
+INVALID USER PASSWORD
+
+$ curl "http://localhost:8080/messages/login?user=Itachi&password=doubleAgent"
+LOGIN SUCCESSFUL!!!
